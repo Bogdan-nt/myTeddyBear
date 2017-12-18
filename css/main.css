@@ -289,3 +289,57 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+html {
+    background: url(../img/background.png) no-repeat center center fixed;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#cap {
+    bottom: 50px;
+    position: absolute;
+    left: 350px;
+    height: 100px;
+}
+
+#corp {
+    bottom: 50px;
+    position: absolute;
+    left: 350px;
+    height: 100px;
+}
+
+#mana_stanga {
+    bottom: 50px;
+    position: absolute;
+    left: 550px;
+    height: 100px;
+}
+#picior_jos_dreapta {
+    bottom: 50px;
+    position: absolute;
+    left: 750px;
+    height: 100px;
+}
+#picior_jos_stanga {
+    bottom: 50px;
+    position: absolute;
+    left: 350px;
+    height: 100px;
+}
+#ureche_dreapta {
+    bottom: 50px;
+    position: absolute;
+    left: 350px;
+    height: 100px;
+}
+
+#ureche_stanga {
+    bottom: 50px;
+    position: absolute;
+    left: 350px;
+    height: 100px;
+}
