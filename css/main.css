@@ -299,47 +299,47 @@ html {
 }
 
 #cap {
-    bottom: 50px;
     position: absolute;
-    left: 350px;
+    left: 900px;
+    top: 150px;
     height: 100px;
 }
 
 #corp {
-    bottom: 50px;
     position: absolute;
-    left: 350px;
+    left: 910px;
+    top: 240px;
     height: 100px;
 }
 
 #mana_stanga {
-    bottom: 50px;
     position: absolute;
-    left: 550px;
+    left: 820px;
+    top: 200px;
     height: 100px;
 }
 #picior_jos_dreapta {
-    bottom: 50px;
     position: absolute;
-    left: 750px;
+    left: 990px;
+    top: 90px;
     height: 100px;
 }
 #picior_jos_stanga {
-    bottom: 50px;
     position: absolute;
-    left: 350px;
+    left: 833px;
+    top: 90px;
     height: 100px;
 }
 #ureche_dreapta {
-    bottom: 50px;
     position: absolute;
-    left: 350px;
+    left: 960px;
+    top: 310px;
     height: 100px;
 }
 
 #ureche_stanga {
-    bottom: 50px;
     position: absolute;
-    left: 350px;
+    left: 860px;
+    top: 310px;
     height: 100px;
 }
