@@ -302,44 +302,62 @@ html {
     position: absolute;
     left: 900px;
     top: 150px;
-    height: 100px;
+    height: 280px;
+    width:460px;
 }
 
 #corp {
     position: absolute;
     left: 910px;
     top: 240px;
-    height: 100px;
+    height: 250px;
+    width:360px;
 }
 
 #mana_stanga {
     position: absolute;
     left: 820px;
     top: 200px;
-    height: 100px;
+    height: 130px;
+    transform: rotate(-10deg);
 }
+
+#mana_dreapta {
+    position: absolute;
+    left: 820px;
+    top: 200px;
+    height: 130px;
+    transform: rotate(-220deg);
+}
+
 #picior_jos_dreapta {
     position: absolute;
     left: 990px;
     top: 90px;
-    height: 100px;
+    height: 120px;
+    width:180px;
+    transform: rotate(-30deg);
 }
 #picior_jos_stanga {
     position: absolute;
     left: 833px;
     top: 90px;
-    height: 100px;
+    height: 120px;
+    width:180px;
+    transform: rotate(30deg);
 }
 #ureche_dreapta {
     position: absolute;
     left: 960px;
     top: 310px;
-    height: 100px;
+    height: 110px;
+    width:150px;
 }
 
 #ureche_stanga {
     position: absolute;
     left: 860px;
     top: 310px;
-    height: 100px;
+    height: 110px;
+    width:150px;
 }
