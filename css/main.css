@@ -291,55 +291,12 @@ textarea {
 }
 
 html {
-    background: url(../img/background.png) no-repeat center center fixed;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
 }
 
-#cap {
-    position: absolute;
-    left: 900px;
-    top: 150px;
-    height: 100px;
-}
-
-#corp {
-    position: absolute;
-    left: 910px;
-    top: 240px;
-    height: 100px;
-}
-
-#mana_stanga {
-    position: absolute;
-    left: 820px;
-    top: 200px;
-    height: 100px;
-}
-#picior_jos_dreapta {
-    position: absolute;
-    left: 990px;
-    top: 90px;
-    height: 100px;
-}
-#picior_jos_stanga {
-    position: absolute;
-    left: 833px;
-    top: 90px;
-    height: 100px;
-}
-#ureche_dreapta {
-    position: absolute;
-    left: 960px;
-    top: 310px;
-    height: 100px;
-}
-
-#ureche_stanga {
-    position: absolute;
-    left: 860px;
-    top: 310px;
-    height: 100px;
+#viewport canvas {
+    margin: 0 auto !important;
 }
