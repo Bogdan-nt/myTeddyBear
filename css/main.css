@@ -300,66 +300,83 @@ html {
 
 #cap {
     position: absolute;
-    left: 900px;
-    top: 150px;
-    height: 280px;
-    width:460px;
+    width: 25%;
+    height: 30%;
+    /*left: 900px;*/
+    /*top: 150px;*/
+    /*height: 280px;*/
+    /*width:460px;*/
 }
 
 #corp {
     position: absolute;
-    left: 910px;
-    top: 240px;
-    height: 250px;
-    width:360px;
+    width: 21%;
+    height: 25%;
+    /*left: 910px;*/
+    /*top: 240px;*/
+    /*height: 250px;*/
+    /*width:360px;*/
 }
 
 #mana_stanga {
     position: absolute;
-    left: 820px;
-    top: 200px;
-    height: 130px;
-    transform: rotate(-10deg);
+    width: 8%;
+    height: 11%;
+    /*left: 820px;*/
+    /*top: 200px;*/
+    /*height: 130px;*/
 }
 
 #mana_dreapta {
     position: absolute;
-    left: 820px;
-    top: 200px;
-    height: 130px;
-    transform: rotate(-220deg);
+    width: 8%;
+    height: 11%;
+    /*left: 820px;*/
+    /*top: 200px;*/
+    /*height: 130px;*/
+    /*rotation:180deg*/
+    /*rotation-point:50% 50%;*/
+    /*rotation:180deg;*/
 }
 
 #picior_jos_dreapta {
     position: absolute;
-    left: 990px;
-    top: 90px;
-    height: 120px;
-    width:180px;
+    width: 9%;
+    height: 13%;
+    /*left: 990px;*/
+    /*top: 90px;*/
+    /*height: 120px;*/
+    /*width:180px;*/
     transform: rotate(-30deg);
 }
 #picior_jos_stanga {
     position: absolute;
-    left: 833px;
-    top: 90px;
-    height: 120px;
-    width:180px;
+    width: 9%;
+    height: 13%;
+    /*left: 833px;*/
+    /*top: 90px;*/
+    /*height: 120px;*/
+    /*width:180px;*/
     transform: rotate(30deg);
 }
 #ureche_dreapta {
     position: absolute;
-    left: 960px;
-    top: 310px;
-    height: 110px;
-    width:150px;
+    width: 8%;
+    height: 12%;
+    /*left: 960px;*/
+    /*top: 310px;*/
+    /*height: 110px;*/
+    /*width:150px;*/
 }
 
 #ureche_stanga {
     position: absolute;
-    left: 860px;
-    top: 310px;
-    height: 110px;
-    width:150px;
+    width: 8%;
+    height: 12%;
+    /*left: 860px;*/
+    /*top: 310px;*/
+    /*height: 110px;*/
+    /*width:150px;*/
 }
 
 .ear-ring-outer{
