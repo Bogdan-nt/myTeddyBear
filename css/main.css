@@ -379,6 +379,29 @@ html {
     /*width:150px;*/
 }
 
+/*#play_button {*/
+    /*position:absolute;*/
+    /*!*transition: .5s ease;*!*/
+    /*!*top: 191px;*!*/
+    /*!*left: 420px;*!*/
+    /*!*right: -420px;*!*/
+    /*!*bottom: -191px;*!*/
+    /*background-image: url("../img/sound_button.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: left;*/
+    /*padding-left: 50px;*/
+/*}*/
+#play_button {
+    /*width: auto;*/
+    /*height: auto;*/
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
 .ear-ring-outer{
      content: '';
      width: 100px;

@@ -31,6 +31,10 @@
             <img class="picior_jos_stanga" id="picior_jos_stanga" src="img/picior_jos_stanga.png">
 
         </div>
+        <div>
+            <button class="play_button" id="play_button" onclick="playAudio('play_button')" type="button"> <img src="./img/sound_button.png"></button>
+            <!--<button class="play_button" id="play_button" onclick="playAudio()" type="button"></button>-->
+        </div>
         <div class= "ear-ring-outer">
             <div class="ear-ring">
             </div>
@@ -56,5 +60,22 @@
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+        <audio id="myAudio">
+            <source src="./sounds/ursuletii.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <script>
+            var x = document.getElementById("myAudio");
+
+            function playAudio(btn) {
+                var property = document.getElementById(btn);
+                // if(x.paused)
+                //     property.src = "./img/alta_imagine.png"
+                //     property.backgroundColor="#7FFF00"
+                return x.paused ? x.play() : x.pause();
+            }
+        </script>
     </body>
 </html>
