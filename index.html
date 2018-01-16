@@ -71,9 +71,9 @@
 
             function playAudio(btn) {
                 var property = document.getElementById(btn);
-                // if(x.paused)
-                //     property.src = "./img/alta_imagine.png"
-                //     property.backgroundColor="#7FFF00"
+                if(x.paused)
+                    property.backgroundImage = ".img/mana_dreapta.png"
+                    property.backgroundColor="#7FFF00"
                 return x.paused ? x.play() : x.pause();
             }
         </script>
