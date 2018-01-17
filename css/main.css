@@ -438,3 +438,9 @@ body {
 .modal-video-close-btn:after, .modal-video-close-btn:before {
     content: none;
 }
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}

@@ -82,4 +82,8 @@ window.onload = function () {
 
 document.addEventListener("DOMContentLoaded", function(event) {
     new ModalVideo(".video_link");
+
+    particlesJS.load('particles-js', 'other/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
 });
