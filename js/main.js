@@ -25,12 +25,23 @@ function drag(event) {
 function drop(event) {
     event.preventDefault();
     const component = document.getElementById(event.dataTransfer.getData("id"));
-    console.log(checkIfContainerIsValid(component, event.target));
-    console.log(checkIfContainerHasOtherChildren(event.target));
     if (checkIfContainerHasOtherChildren(event.target) &&
         checkIfContainerIsValid(component, event.target)) {
         event.target.appendChild(component);
     }
+    if(checkIfGameIsOver()) {
+        setTimeout(startVideoPresentation, 1000);
+    }
+}
+
+function startVideoPresentation() {
+    console.log("video")
+}
+
+function checkIfGameIsOver() {
+    return [].slice.call(document.getElementsByClassName('container_component'))
+        .map(item => item.children.length === 1)
+        .filter(it => it === false).length === 0;
 }
 
 function checkIfContainerIsValid(component, container) {
@@ -41,11 +52,6 @@ function checkIfContainerIsValid(component, container) {
 
 function checkIfContainerHasOtherChildren(container) {
     return container.children.length === 0;
-}
-
-function checkIfComponentIsInTheRightContainer(component, container) {
-    console.log(container.id);
-    console.log(component.id);
 }
 
 function startBackgroundMusic() {
