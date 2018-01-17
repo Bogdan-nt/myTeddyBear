@@ -65,3 +65,7 @@ function startBackgroundMusic() {
 window.onload = function () {
     startBackgroundMusic();
 };
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    new ModalVideo(".video_link");
+});

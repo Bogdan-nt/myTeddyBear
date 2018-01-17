@@ -336,6 +336,7 @@ body {
 .video_link {
     opacity: 0.7;
     display: none;
+    cursor: pointer;
 }
 
 #ear-ring-outer {
@@ -420,4 +421,20 @@ body {
     100% {
         -webkit-transform: scale(1, 1);
     }
+}
+
+.modal-video {
+    background-color: rgba(0,0,0,0.95);
+}
+
+.modal-video-close-btn {
+    background-image: url('../img/close_button.png');
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    right: -100px;
+    cursor: pointer;
+}
+.modal-video-close-btn:after, .modal-video-close-btn:before {
+    content: none;
 }
