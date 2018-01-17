@@ -225,6 +225,18 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: center;
+    justify-items: center;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: translate(0px, 300px);
+}
+
+#image_container > #bear_form {
+    width: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 #container_head {
@@ -241,7 +253,7 @@ html {
 #container_left_arm {
     width: 120px;
     height: 120px;
-    transform:  translate(-130px, -40px);
+    transform: translate(-130px, -40px);
 }
 
 #container_right_arm {
