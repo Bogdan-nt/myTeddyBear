@@ -14,7 +14,7 @@ function playMusic() {
 }
 
 function resetGame() {
-    console.log("reset");
+    location.reload();
 }
 
 function allowDrop(event) {
