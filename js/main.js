@@ -1,5 +1,9 @@
-const source = "./sounds/background_song.mp3";
+const background_music = "./sounds/background_song.mp3";
+const fail_music = "./sounds/fail.mp3";
+const final_music = "./sounds/final.mp3";
+const step_music = "./sounds/step.mp3";
 const audio = document.createElement("audio");
+const step_audio = document.createElement("audio");
 
 function playMusic() {
     const playButton = document.getElementById("play_button");
@@ -27,9 +31,11 @@ function drop(event) {
     if (checkIfContainerHasOtherChildren(event.target) &&
         checkIfContainerIsValid(component, event.target)) {
         event.target.appendChild(component);
+        startStepAudio(step_music);
     }
     if(checkIfGameIsOver()) {
         setTimeout(startVideoPresentation, 1000);
+        startStepAudio(final_music);
     }
 }
 
@@ -57,9 +63,17 @@ function checkIfContainerHasOtherChildren(container) {
 
 function startBackgroundMusic() {
     audio.autoplay = true;
+    audio.volume = 0.2;
     audio.load();
     audio.addEventListener("load", () => audio.play(), true);
-    audio.src = source;
+    audio.src = background_music;
+}
+
+function startStepAudio(music) {
+    step_audio.autoplay = true;
+    step_audio.load();
+    step_audio.addEventListener("load", () => audio.play(), true);
+    step_audio.src = music;
 }
 
 window.onload = function () {
