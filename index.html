@@ -54,7 +54,9 @@
              id="container_right_arm"
              ondrop="drop(event)"
              ondragover="allowDrop(event)">
-            <div class="video_link" id="hand-ring-outer" data-video-id="FOcQqA6Zhqg">
+            <div class="video_link" id="hand-ring-outer"
+                 onclick="audio.pause()"
+                 data-video-id="FOcQqA6Zhqg">
                 <div id="hand-ring">
                 </div>
             </div>
@@ -71,7 +73,8 @@
              id="container_left_ear"
              ondrop="drop(event)"
              ondragover="allowDrop(event)">
-            <div class="video_link" id="ear-ring-outer" data-video-id="vbKuAwoeCKE">
+            <div class="video_link" id="ear-ring-outer"
+                 data-video-id="vbKuAwoeCKE" onclick="audio.pause()">
                 <div id="ear-ring">
                 </div>
             </div>
@@ -84,7 +87,9 @@
              id="container_left_leg"
              ondrop="drop(event)"
              ondragover="allowDrop(event)">
-            <div class="video_link" id="foot-ring-outer" data-video-id="xOVoINIkoAQ">
+            <div class="video_link" id="foot-ring-outer"
+                 onclick="audio.pause()"
+                 data-video-id="xOVoINIkoAQ">
                 <div id="foot-ring">
                 </div>
             </div>
@@ -95,7 +100,8 @@
              ondragover="allowDrop(event)"></div>
     </div>
     <div class="scroll_container">
-        <div id="bottom_controller_container" class="bottom_controller_container_carousel">
+        <div id="bottom_controller_container"
+             class="bottom_controller_container_carousel">
             <div class="button_container_form"
                  ondrop="drop(event)"
                  ondragover="allowDrop(event)">
@@ -161,11 +167,6 @@
     </div>
 </div>
 
-
-
-
-
-
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -192,7 +193,8 @@
     Your browser does not support the audio element.
 </audio>
 <script src="js/vendor/modal-video.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script
+    src="//cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
