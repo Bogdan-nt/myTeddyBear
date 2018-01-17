@@ -1,81 +1,166 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</head>
 
-        <!-- Add your site or application content here -->
-        <div id="viewport">
-            <img class="ureche_dreapta" id="ureche_dreapta" src="img/ureche_dreapta.png">
-            <img class="ureche_stanga" id="ureche_stanga" src="img/ureche_stanga.png">
-            <img class="mana_stanga" id="mana_stanga" src="img/mana_stanga.png">
-            <img class="mana_dreapta" id="mana_dreapta" src="img/mana_dreapta.png">
-            <img class="corp" id="corp" src="img/corp.png">
-            <img class="cap" id="cap" src="img/cap.png">
-            <img class="picior_jos_dreapta" id="picior_jos_dreapta" src="img/picior_jos_dreapta.png">
-            <img class="picior_jos_stanga" id="picior_jos_stanga" src="img/picior_jos_stanga.png">
+<body>
+<!--[if lte IE 9]>
+<p class="browser_upgrade">You are using an <strong>outdated</strong> browser.
+    Please <a href="https://browsehappy.com/">upgrade your browser</a> to
+    improve your experience and security.</p>
+<![endif]-->
 
-        </div>
-        <div>
-            <button class="play_button" id="play_button" onclick="playAudio('play_button')" type="button"> <img src="./img/sound_button.png"></button>
-            <!--<button class="play_button" id="play_button" onclick="playAudio()" type="button"></button>-->
-        </div>
-        <div class= "ear-ring-outer">
-            <div class="ear-ring">
+<div class="button" id="head_button"></div>
+
+<!-- Add your site or application content here -->
+<div id="viewport">
+
+</div>
+
+<div id="container_bear">
+    <div class="container_component"
+         id="container_head"
+         ondrop="drop(event)"
+         ondragover="allowDrop(event)"></div>
+    <div class="container_component"
+         id="container_body"
+         ondrop="drop(event)"
+         ondragover="allowDrop(event)"></div>
+    <div class="container_component"
+         id="container_left_arm"
+         ondrop="drop(event)"
+         ondragover="allowDrop(event)"></div>
+    <div class="container_component"
+         id="container_right_arm"
+         ondrop="drop(event)"
+         ondragover="allowDrop(event)"></div>
+    <div class="container_component"
+         id="container_left_ear"
+         ondrop="drop(event)"
+         ondragover="allowDrop(event)"></div>
+    <div class="container_component"
+         id="container_right_ear"
+         ondrop="drop(event)"
+         ondragover="allowDrop(event)"></div>
+    <div class="container_component"
+         id="container_left_leg"
+         ondrop="drop(event)"
+         ondragover="allowDrop(event)"></div>
+    <div class="container_component"
+         id="container_right_leg"
+         ondrop="drop(event)"
+         ondragover="allowDrop(event)"></div>
+</div>
+
+<div id="controller_container">
+    <div id="top_controller_container">
+        <button class="controller_button" id="play_button"
+                onclick="playMusic()" type="button">
+            <img width="90" src="./img/sound_button.png">
+        </button>
+
+        <button class="controller_button" id="reset_button"
+                onclick="resetGame()" type="button">
+            <img width="90" src="./img/replay_button.png">
+        </button>
+    </div>
+
+    <img id="bear_form" src="./img/bear_form.png">
+
+    <div class="scroll_container"><
+        <div id="bottom_controller_container">
+            <div class="button_container_form">
+                <img class="component" id="head" src="img/cap.png"
+                     draggable="true" ondragstart="drag(event)">
+            </div>
+            <div class="button_container_form">
+                <img class="component" id="right_ear"
+                     src="img/ureche_dreapta.png"
+                     draggable="true" ondragstart="drag(event)">
+            </div>
+            <div class="button_container_form">
+                <img class="component" id="left_ear" src="img/ureche_stanga.png"
+                     draggable="true" ondragstart="drag(event)">
+            </div>
+            <div class="button_container_form">
+                <img class="component" id="left_arm" src="img/mana_stanga.png"
+                     draggable="true" ondragstart="drag(event)">
+            </div>
+            <div class="button_container_form">
+                <img class="component" id="right_arm" src="img/mana_dreapta.png"
+                     draggable="true" ondragstart="drag(event)">
+            </div>
+            <div class="button_container_form">
+                <img class="component" id="body" src="img/corp.png"
+                     draggable="true" ondragstart="drag(event)">
+            </div>
+            <div class="button_container_form">
+                <img class="component" id="right_leg"
+                     src="img/picior_jos_dreapta.png"
+                     draggable="true" ondragstart="drag(event)">
+            </div>
+            <div class="button_container_form">
+                <img class="component" id="left_leg"
+                     src="img/picior_jos_stanga.png"
+                     draggable="true" ondragstart="drag(event)">
             </div>
         </div>
-        <div class= "foot-ring-outer">
-            <div class="foot-ring">
-            </div>
-        </div>
-        <div class= "hand-ring-outer">
-            <div class="hand-ring">
-            </div>
-        </div>
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    </div>
+</div>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<div class="video_link" id="ear-ring-outer">
+    <div id="ear-ring">
+    </div>
+</div>
+<div class="video_link" id="foot-ring-outer">
+    <div id="foot-ring">
+    </div>
+</div>
+<div class="video_link" id="hand-ring-outer">
+    <div id="hand-ring">
+    </div>
+</div>
 
-        <audio id="myAudio">
-            <source src="./sounds/ursuletii.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 
-        <script>
-            var x = document.getElementById("myAudio");
 
-            function playAudio(btn) {
-                var property = document.getElementById(btn);
-                if(x.paused)
-                    property.backgroundImage = ".img/mana_dreapta.png"
-                    property.backgroundColor="#7FFF00"
-                return x.paused ? x.play() : x.pause();
-            }
-        </script>
-    </body>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async
+        defer></script>
+
+<audio id="myAudio">
+    <source src="sounds/background_song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+</body>
 </html>

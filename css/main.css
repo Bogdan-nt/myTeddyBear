@@ -1,30 +1,9 @@
-/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
 
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -36,10 +15,6 @@ html {
     text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
 hr {
     display: block;
     height: 1px;
@@ -48,12 +23,6 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
 
 audio,
 canvas,
@@ -64,77 +33,28 @@ video {
     vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
 fieldset {
     border: 0;
     margin: 0;
     padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
 textarea {
     resize: vertical;
 }
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
+.browser_upgrade {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
 .hidden {
     display: none !important;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visuallyhidden {
+.visually_hidden {
     border: 0;
     clip: rect(0 0 0 0);
     -webkit-clip-path: inset(50%);
@@ -145,17 +65,11 @@ textarea {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visually_hidden.focusable:active,
+.visually_hidden.focusable:focus {
     clip: auto;
     -webkit-clip-path: none;
     clip-path: none;
@@ -167,66 +81,35 @@ textarea {
     white-space: inherit;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
 .invisible {
     visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
+.clear_fix:before,
+.clear_fix:after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
 
-.clearfix:after {
+.clear_fix:after {
     clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
 }
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
 
 @media print {
     *,
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+        color: #000 !important;
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -244,11 +127,6 @@ textarea {
         content: " (" attr(title) ")";
     }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
@@ -257,16 +135,12 @@ textarea {
     pre {
         white-space: pre-wrap !important;
     }
+
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
 
     thead {
         display: table-header-group;
@@ -291,136 +165,170 @@ textarea {
 }
 
 html {
-    background: url(../img/background.png) no-repeat center center fixed;
+    overflow: auto;
+    background: #508C47;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
 }
 
-#cap {
-    position: absolute;
-    width: 25%;
-    height: 30%;
-    /*left: 900px;*/
-    /*top: 150px;*/
-    /*height: 280px;*/
-    /*width:460px;*/
+.button_container_form {
+    background: #98C25C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 40px 0 rgba(128, 255, 0, 0.10), 5px 5px 0 0 #487E40, inset 0 -5px 0 0 #719440;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
 }
 
-#corp {
+.container_component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    width: 21%;
-    height: 25%;
-    /*left: 910px;*/
-    /*top: 240px;*/
-    /*height: 250px;*/
-    /*width:360px;*/
+    width: 200px;
+    height: 200px;
 }
 
-#mana_stanga {
-    position: absolute;
-    width: 8%;
-    height: 11%;
-    /*left: 820px;*/
-    /*top: 200px;*/
-    /*height: 130px;*/
+.component {
+    #position: absolute;
+    -moz-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
 }
 
-#mana_dreapta {
+#bear_form {
     position: absolute;
-    width: 8%;
-    height: 11%;
-    /*left: 820px;*/
-    /*top: 200px;*/
-    /*height: 130px;*/
-    /*rotation:180deg*/
-    /*rotation-point:50% 50%;*/
-    /*rotation:180deg;*/
+    align-self: center;
+    justify-items: center;
+
+    -moz-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
 }
 
-#picior_jos_dreapta {
-    position: absolute;
-    width: 9%;
-    height: 13%;
-    /*left: 990px;*/
-    /*top: 90px;*/
-    /*height: 120px;*/
-    /*width:180px;*/
-    transform: rotate(-30deg);
-}
-#picior_jos_stanga {
-    position: absolute;
-    width: 9%;
-    height: 13%;
-    /*left: 833px;*/
-    /*top: 90px;*/
-    /*height: 120px;*/
-    /*width:180px;*/
-    transform: rotate(30deg);
-}
-#ureche_dreapta {
-    position: absolute;
-    width: 8%;
-    height: 12%;
-    /*left: 960px;*/
-    /*top: 310px;*/
-    /*height: 110px;*/
-    /*width:150px;*/
+#container_head {
+    background: red;
+    left: 320px;
+    top: 100px;
 }
 
-#ureche_stanga {
-    position: absolute;
-    width: 8%;
-    height: 12%;
-    /*left: 860px;*/
-    /*top: 310px;*/
-    /*height: 110px;*/
-    /*width:150px;*/
+#container_body {
+    background: blue;
+    left: 320px;
+    top: 300px;
 }
 
-/*#play_button {*/
-    /*position:absolute;*/
-    /*!*transition: .5s ease;*!*/
-    /*!*top: 191px;*!*/
-    /*!*left: 420px;*!*/
-    /*!*right: -420px;*!*/
-    /*!*bottom: -191px;*!*/
-    /*background-image: url("../img/sound_button.png");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: left;*/
-    /*padding-left: 50px;*/
-/*}*/
-#play_button {
-    /*width: auto;*/
-    /*height: auto;*/
-    /*background-image: url("../img/sound_button.png");*/
+#container_left_arm {
+    background: green;
+    width: 100px;
+    left: 240px;
+    top: 300px;
+}
+
+#container_right_arm {
+    background: green;
+    width: 100px;
+    left: 500px;
+    top: 300px;
+}
+
+#container_left_leg {
+    background: black;
+    width: 100px;
+    left: 280px;
+    top: 400px;
+}
+
+#container_right_leg {
+    background: black;
+    width: 100px;
+    left: 460px;
+    top: 400px;
+}
+
+#container_left_ear {
+    background: black;
+    width: 100px;
+    height: 100px;
+    left: 280px;
+    top: 100px;
+}
+
+#container_right_ear {
+    background: black;
+    width: 100px;
+    height: 100px;
+    left: 460px;
+    top: 100px;
+}
+
+#top_controller_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: left;
+    padding: 40px;
+}
+
+.scroll_container {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#bottom_controller_container {
+    width: 2000px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+#controller_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.controller_button {
     background-color: Transparent;
-    background-repeat:no-repeat;
-    /*background-image: url("../img/sound_button.png");*/
+    background-repeat: no-repeat;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     overflow: hidden;
-    outline:none;
-    display:block;
-    /*max-width: 20%;*/
-    /*max-height: 20%;*/
+    outline: none;
+    display: block;
 }
 
-.ear-ring-outer{
-     content: '';
-     width: 100px;
-     height: 100px;
-     border: 8px solid #fff;
-     border-radius: 50%;
-     position: absolute;
-     opacity: 0.7;
-     top: 70px;
-     left: 550px;
-     animation: pulsate infinite 1s;
- }
+.video_link {
+    opacity: 0.7;
+    display: none;
+}
 
-.ear-ring {
+#ear-ring-outer {
+    content: '';
+    width: 100px;
+    height: 100px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: 550px;
+    animation: pulsate infinite 1s;
+}
+
+#ear-ring {
     content: '';
     width: 30px;
     height: 30px;
@@ -432,20 +340,19 @@ html {
     animation: pulsate infinite 1s;
 }
 
-.foot-ring-outer{
+#foot-ring-outer {
     content: '';
     width: 100px;
     height: 100px;
     border: 8px solid #fff;
     border-radius: 50%;
     position: absolute;
-    opacity: 0.7;
     top: 400px;
     left: 500px;
     animation: pulsate infinite 1s;
 }
 
-.foot-ring {
+#foot-ring {
     content: '';
     width: 30px;
     height: 30px;
@@ -457,20 +364,19 @@ html {
     animation: pulsate infinite 1s;
 }
 
-.hand-ring-outer{
+#hand-ring-outer {
     content: '';
     width: 100px;
     height: 100px;
     border: 8px solid #fff;
     border-radius: 50%;
     position: absolute;
-    opacity: 0.7;
     top: 300px;
     left: 780px;
     animation: pulsate infinite 1s;
 }
 
-.hand-ring {
+#hand-ring {
     content: '';
     width: 30px;
     height: 30px;
