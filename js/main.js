@@ -10,7 +10,6 @@ function playMusic() {
     audio.paused ? audio.play() : audio.pause();
     audio.paused ? playButton.style.setProperty("filter", "grayscale(60%)") :
         playButton.style.setProperty("filter", "none");
-
 }
 
 function resetGame() {
@@ -28,29 +27,39 @@ function drag(event) {
 function drop(event) {
     event.preventDefault();
     const component = document.getElementById(event.dataTransfer.getData("id"));
+    const buttonComponent = component.parentElement;
     if (checkIfContainerHasOtherChildren(event.target) &&
         checkIfContainerIsValid(component, event.target)) {
         event.target.appendChild(component);
+        document.getElementById("bottom_controller_container").style.setProperty("width",
+            `${1700 - numberOfCorrectPlacedComponents() * 200}px`);
+        buttonComponent.style.setProperty("display", "none");
         startStepAudio(step_music);
     } else {
         startStepAudio(fail_music);
     }
-    if(checkIfGameIsOver()) {
+    if (checkIfGameIsOver()) {
+        document.getElementById("bear_form").style.setProperty("display", "none");
         setTimeout(startVideoPresentation, 1000);
         startStepAudio(final_music);
     }
 }
 
 function startVideoPresentation() {
-    console.log("video");
+    [].slice.call(document.getElementsByClassName('button_container_form'))
+        .map(item => item.style.setProperty("display", "none"));
     [].slice.call(document.getElementsByClassName('video_link'))
         .forEach(item => item.style.setProperty("display", "block"));
 }
 
-function checkIfGameIsOver() {
+function numberOfCorrectPlacedComponents() {
     return [].slice.call(document.getElementsByClassName('container_component'))
         .map(item => $(item).children().filter('img').length === 1)
-        .filter(it => it === false).length === 0;
+        .filter(it => it === true).length;
+}
+
+function checkIfGameIsOver() {
+    return numberOfCorrectPlacedComponents() === 8;
 }
 
 function checkIfContainerIsValid(component, container) {
@@ -82,10 +91,10 @@ window.onload = function () {
     startBackgroundMusic();
 };
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    new ModalVideo(".video_link");
 
-    particlesJS.load('particles-js', 'other/particles.json', function() {
+document.addEventListener("DOMContentLoaded", function (event) {
+    new ModalVideo(".video_link");
+    particlesJS.load('particles-js', 'other/particles.json', function () {
         console.log('callback - particles.js config loaded');
     });
 });

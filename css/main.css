@@ -429,9 +429,11 @@ body {
     right: -100px;
     cursor: pointer;
 }
+
 .modal-video-close-btn:after, .modal-video-close-btn:before {
     content: none;
 }
+
 #particles-js {
     position: absolute;
     width: 100%;

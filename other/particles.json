@@ -4,11 +4,11 @@
             "value": 20,
             "density": {
                 "enable": true,
-                "value_area": 800
+                "value_area": 900
             }
         },
         "color": {
-            "value": "#ffffff"
+            "value": "#F9ED69"
         },
         "shape": {
             "type": "circle",
@@ -56,9 +56,9 @@
             "enable": true,
             "speed": 12,
             "direction": "none",
-            "random": false,
+            "random": true,
             "straight": false,
-            "out_mode": "out",
+            "out_mode": "in",
             "bounce": false,
             "attract": {
                 "enable": false,
