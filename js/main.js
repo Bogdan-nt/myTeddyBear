@@ -15,7 +15,6 @@ function resetGame() {
 
 function allowDrop(event) {
     event.preventDefault();
-
 }
 
 function drag(event) {
@@ -35,7 +34,9 @@ function drop(event) {
 }
 
 function startVideoPresentation() {
-    console.log("video")
+    console.log("video");
+    [].slice.call(document.getElementsByClassName('video_link'))
+        .forEach(item => item.style.setProperty("display", "block"));
 }
 
 function checkIfGameIsOver() {
