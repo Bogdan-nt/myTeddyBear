@@ -204,66 +204,61 @@ html {
     position: absolute;
     align-self: center;
     justify-items: center;
-
     -moz-transform: scale(0.7);
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
 }
 
+#container_bear {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #container_head {
-    background: red;
-    left: 320px;
-    top: 100px;
+    position: absolute;
+    transform: translate(0px, -140px);
 }
 
 #container_body {
-    background: blue;
-    left: 320px;
-    top: 300px;
+    transform: translate(0px, 0px);
 }
 
 #container_left_arm {
-    background: green;
-    width: 100px;
-    left: 240px;
-    top: 300px;
+    width: 60px;
+    height: 60px;
+    transform: translate(-130px, -40px);
 }
 
 #container_right_arm {
-    background: green;
-    width: 100px;
-    left: 500px;
-    top: 300px;
+    width: 60px;
+    height: 60px;
+    transform: translate(130px, -40px);
 }
 
 #container_left_leg {
-    background: black;
     width: 100px;
-    left: 280px;
-    top: 400px;
+    height: 100px;
+    transform: translate(-80px, 70px);
 }
 
 #container_right_leg {
-    background: black;
     width: 100px;
-    left: 460px;
-    top: 400px;
+    height: 100px;
+    transform: translate(80px, 70px);
 }
 
 #container_left_ear {
-    background: black;
     width: 100px;
     height: 100px;
-    left: 280px;
-    top: 100px;
+    transform: translate(-90px, -220px);
 }
 
 #container_right_ear {
-    background: black;
     width: 100px;
     height: 100px;
-    left: 460px;
-    top: 100px;
+    transform: translate(90px, -220px)
 }
 
 #top_controller_container {
