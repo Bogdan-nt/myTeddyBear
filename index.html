@@ -13,8 +13,6 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -81,7 +79,7 @@
              ondragover="allowDrop(event)"></div>
     </div>
     <div class="scroll_container">
-        <div id="bottom_controller_container">
+        <div id="bottom_controller_container" class="bottom_controller_container_carousel">
             <div class="button_container_form"
                  ondrop="drop(event)"
                  ondragover="allowDrop(event)">
@@ -170,8 +168,6 @@
         integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-
-
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
     window.ga = function () {
@@ -189,5 +185,8 @@
     <source src="sounds/background_song.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
+
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
