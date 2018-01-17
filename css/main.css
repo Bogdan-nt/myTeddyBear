@@ -184,6 +184,13 @@ html {
     height: 200px;
 }
 
+.button_container_form > .component {
+    width: auto;
+    max-width: 150px;
+    height: auto;
+    border-radius: 400px;
+}
+
 .container_component {
     display: flex;
     justify-content: center;
@@ -191,79 +198,80 @@ html {
     position: absolute;
     width: 200px;
     height: 200px;
+    border-radius: 400px;
+}
+
+.container_component .component {
+    width: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .component {
     #position: absolute;
-    -moz-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
 }
 
 #bear_form {
     position: absolute;
     align-self: center;
     justify-items: center;
-
     -moz-transform: scale(0.7);
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
 }
 
+#container_bear {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #container_head {
-    background: red;
-    left: 320px;
-    top: 100px;
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    transform: translate(0px, -140px);
 }
 
 #container_body {
-    background: blue;
-    left: 320px;
-    top: 300px;
+    transform: translate(0px, 0px);
 }
 
 #container_left_arm {
-    background: green;
-    width: 100px;
-    left: 240px;
-    top: 300px;
+    width: 120px;
+    height: 120px;
+    transform:  translate(-130px, -40px);
 }
 
 #container_right_arm {
-    background: green;
-    width: 100px;
-    left: 500px;
-    top: 300px;
+    width: 120px;
+    height: 120px;
+    transform: translate(130px, -40px);
 }
 
 #container_left_leg {
-    background: black;
     width: 100px;
-    left: 280px;
-    top: 400px;
+    height: 100px;
+    transform: translate(-80px, 70px);
 }
 
 #container_right_leg {
-    background: black;
     width: 100px;
-    left: 460px;
-    top: 400px;
+    height: 100px;
+    transform: translate(80px, 70px);
 }
 
 #container_left_ear {
-    background: black;
     width: 100px;
     height: 100px;
-    left: 280px;
-    top: 100px;
+    transform: translate(-94px, -220px);
 }
 
 #container_right_ear {
-    background: black;
     width: 100px;
     height: 100px;
-    left: 460px;
-    top: 100px;
+    transform: translate(94px, -220px)
 }
 
 #top_controller_container {
@@ -280,7 +288,7 @@ html {
 }
 
 #bottom_controller_container {
-    width: 2000px;
+    width: 1700px;
     white-space: nowrap;
     display: flex;
     flex-direction: row;

@@ -7,8 +7,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="manifest" href="other/site.webmanifest">
+    <link rel="apple-touch-icon" href="other/icon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css">
@@ -31,41 +31,6 @@
 
 </div>
 
-<div id="container_bear">
-    <div class="container_component"
-         id="container_head"
-         ondrop="drop(event)"
-         ondragover="allowDrop(event)"></div>
-    <div class="container_component"
-         id="container_body"
-         ondrop="drop(event)"
-         ondragover="allowDrop(event)"></div>
-    <div class="container_component"
-         id="container_left_arm"
-         ondrop="drop(event)"
-         ondragover="allowDrop(event)"></div>
-    <div class="container_component"
-         id="container_right_arm"
-         ondrop="drop(event)"
-         ondragover="allowDrop(event)"></div>
-    <div class="container_component"
-         id="container_left_ear"
-         ondrop="drop(event)"
-         ondragover="allowDrop(event)"></div>
-    <div class="container_component"
-         id="container_right_ear"
-         ondrop="drop(event)"
-         ondragover="allowDrop(event)"></div>
-    <div class="container_component"
-         id="container_left_leg"
-         ondrop="drop(event)"
-         ondragover="allowDrop(event)"></div>
-    <div class="container_component"
-         id="container_right_leg"
-         ondrop="drop(event)"
-         ondragover="allowDrop(event)"></div>
-</div>
-
 <div id="controller_container">
     <div id="top_controller_container">
         <button class="controller_button" id="play_button"
@@ -80,42 +45,99 @@
     </div>
 
     <img id="bear_form" src="./img/bear_form.png">
+    <div id="container_bear">
+        <div class="container_component"
+             id="container_left_arm"
+             ondrop="drop(event)"
+             ondragover="allowDrop(event)"></div>
+        <div class="container_component"
+             id="container_right_arm"
+             ondrop="drop(event)"
+             ondragover="allowDrop(event)"></div>
+        <div class="container_component"
+             id="container_body"
+             ondrop="drop(event)"
+             ondragover="allowDrop(event)"></div>
+        <div class="container_component"
+             id="container_head"
+             ondrop="drop(event)"
+             ondragover="allowDrop(event)"></div>
+        <div class="container_component"
+             id="container_left_ear"
+             ondrop="drop(event)"
+             ondragover="allowDrop(event)"></div>
+        <div class="container_component"
+             id="container_right_ear"
+             ondrop="drop(event)"
+             ondragover="allowDrop(event)"></div>
+        <div class="container_component"
+             id="container_left_leg"
+             ondrop="drop(event)"
+             ondragover="allowDrop(event)"></div>
+        <div class="container_component"
+             id="container_right_leg"
+             ondrop="drop(event)"
+             ondragover="allowDrop(event)"></div>
+    </div>
 
-    <div class="scroll_container"><
+    <div class="scroll_container">
         <div id="bottom_controller_container">
-            <div class="button_container_form">
+            <div class="button_container_form"
+                 ondrop="drop(event)"
+                 ondragover="allowDrop(event)">
+                <img class="component" id="right_ear"
+                     src="img/bear/ear_right.png"
+                     draggable="true" ondragstart="drag(event)">
+            </div>
+
+            <div class="button_container_form"
+                 ondrop="drop(event)"
+                 ondragover="allowDrop(event)">
+                <img class="component" id="left_ear" src="img/bear/ear_left.png"
+                     draggable="true" ondragstart="drag(event)">
+            </div>
+
+            <div class="button_container_form"
+                 ondrop="drop(event)"
+                 ondragover="allowDrop(event)">
                 <img class="component" id="head" src="img/cap.png"
                      draggable="true" ondragstart="drag(event)">
             </div>
-            <div class="button_container_form">
-                <img class="component" id="right_ear"
-                     src="img/ureche_dreapta.png"
+
+            <div class="button_container_form"
+                 ondrop="drop(event)"
+                 ondragover="allowDrop(event)">
+                <img class="component" id="body" src="img/bear/body.png"
                      draggable="true" ondragstart="drag(event)">
             </div>
-            <div class="button_container_form">
-                <img class="component" id="left_ear" src="img/ureche_stanga.png"
+
+            <div class="button_container_form"
+                 ondrop="drop(event)"
+                 ondragover="allowDrop(event)">
+                <img class="component" id="right_arm" src="img/bear/arm_left.png"
                      draggable="true" ondragstart="drag(event)">
             </div>
-            <div class="button_container_form">
-                <img class="component" id="left_arm" src="img/mana_stanga.png"
+
+            <div class="button_container_form"
+                 ondrop="drop(event)"
+                 ondragover="allowDrop(event)">
+                <img class="component" id="left_arm"
+                     src="img/bear/arm_right.png"
                      draggable="true" ondragstart="drag(event)">
             </div>
-            <div class="button_container_form">
-                <img class="component" id="right_arm" src="img/mana_dreapta.png"
-                     draggable="true" ondragstart="drag(event)">
-            </div>
-            <div class="button_container_form">
-                <img class="component" id="body" src="img/corp.png"
-                     draggable="true" ondragstart="drag(event)">
-            </div>
-            <div class="button_container_form">
+
+            <div class="button_container_form"
+                 ondrop="drop(event)"
+                 ondragover="allowDrop(event)">
                 <img class="component" id="right_leg"
-                     src="img/picior_jos_dreapta.png"
+                     src="img/bear/leg_right.png"
                      draggable="true" ondragstart="drag(event)">
             </div>
-            <div class="button_container_form">
-                <img class="component" id="left_leg"
-                     src="img/picior_jos_stanga.png"
+
+            <div class="button_container_form"
+                 ondrop="drop(event)"
+                 ondragover="allowDrop(event)">
+                <img class="component" id="left_leg" src="img/bear/leg_left.png"
                      draggable="true" ondragstart="drag(event)">
             </div>
         </div>
