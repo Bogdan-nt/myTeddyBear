@@ -32,6 +32,8 @@ function drop(event) {
         checkIfContainerIsValid(component, event.target)) {
         event.target.appendChild(component);
         startStepAudio(step_music);
+    } else {
+        startStepAudio(fail_music);
     }
     if(checkIfGameIsOver()) {
         setTimeout(startVideoPresentation, 1000);
@@ -47,7 +49,7 @@ function startVideoPresentation() {
 
 function checkIfGameIsOver() {
     return [].slice.call(document.getElementsByClassName('container_component'))
-        .map(item => item.children.length === 1)
+        .map(item => $(item).children().filter('img').length === 1)
         .filter(it => it === false).length === 0;
 }
 
@@ -58,7 +60,7 @@ function checkIfContainerIsValid(component, container) {
 }
 
 function checkIfContainerHasOtherChildren(container) {
-    return container.children.length === 0;
+    return $(container).children().filter('img').length === 0;
 }
 
 function startBackgroundMusic() {
